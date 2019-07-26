@@ -4,11 +4,14 @@
   "description": "Portfolio V2",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Bradley Caravana",
   "license": "ISC",
+  "homepage": "https://carabc.github.io/bradleycaravana.comV2",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0"
   }
 }
