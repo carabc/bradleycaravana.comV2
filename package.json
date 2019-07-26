@@ -1,0 +1,14 @@
+{
+  "name": "bradleycaravana.comv2",
+  "version": "1.0.0",
+  "description": "Portfolio V2",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Bradley Caravana",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
