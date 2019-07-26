@@ -1,0 +1,100 @@
+.btn {
+  position: absolute;
+  z-index: 300;
+  top: 35px;
+  right: 35px;
+  cursor: pointer;
+  @include easeOut;
+
+  .btn-line {
+    height: 3px;
+    width: 28px;
+    background: #fff;
+    margin: 0 0 5px 0;
+    @include easeOut;
+  }
+
+  &.close {
+    transform: rotate(180deg);
+
+    .btn-line {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -5px);
+      }
+    }
+  }
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  visibility: hidden;
+  z-index: 1;
+
+  &.show {
+    visibility: visible;
+  }
+
+  &-nav {
+    margin: 0;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    background: darken($primary-color, 32);
+    opacity: 0.6;
+    list-style: none;
+    transform: translate3d(0, 100%, 0);
+    z-index: 1;
+    @include easeOut;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .nav-item {
+    padding: 1em;
+    font-size: 2rem;
+    opacity: 0;
+    @include easeOut;
+
+    &.show {
+      opacity: 1;
+    }
+
+    &#current > a {
+      color: $secondary-color;
+    }
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+
+    &:hover {
+      color: darken($secondary-color, 10);
+      @include easeOut;
+    }
+  }
+}
+
+@for $x from 1 through 4 {
+  .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s;
+  }
+}

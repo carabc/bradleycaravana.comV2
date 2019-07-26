@@ -1,0 +1,726 @@
+.s-heading {
+  font-size: 1em; }
+
+.m-heading {
+  font-size: 2.5em; }
+
+.l-heading {
+  font-size: 3.5em; }
+
+.lead {
+  font-size: 20px; }
+
+.highlight {
+  color: #3fc5ff; }
+
+.highlight-dark {
+  color: #005a81; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 1.5rem 0; }
+
+.py-3 {
+  padding: 2rem 0; }
+
+.p-1 {
+  padding: 1rem; }
+
+.p-2 {
+  padding: 1.5rem; }
+
+.p-3 {
+  padding: 2rem; }
+
+.current {
+  color: #3fc5ff; }
+
+.bg-light {
+  color: #000;
+  background: #f4f4f4; }
+
+.bg-dark {
+  background: #333;
+  color: #fff; }
+
+.container {
+  width: 70%;
+  margin: auto;
+  overflow: hidden; }
+
+.btn {
+  border: none;
+  color: #fff;
+  background: #3fc5ff;
+  text-decoration: none;
+  padding: 0.75rem;
+  transition: all 0.3s ease-in-out; }
+
+.btn:hover {
+  background: #005a81;
+  transition: all 0.3s ease-in-out; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@keyframes titles {
+  0% {
+    opacity: 0;
+    transform: translateX(-1000px); }
+  85% {
+    opacity: 1;
+    transform: translateX(30px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes social {
+  0% {
+    opacity: 0;
+    transform: translatey(200px); }
+  85% {
+    opacity: 1;
+    transform: translatey(-15px); }
+  100% {
+    opacity: 1;
+    transform: translatey(0); } }
+
+#menu-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+  #menu-wrap .burger-container {
+    padding: 0.5rem;
+    background: #005a81;
+    border-radius: 50%;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 50px;
+    top: 50px;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.5s ease-in-out; }
+    #menu-wrap .burger-container .line {
+      margin: 0.2rem 0;
+      background: #fff;
+      height: 5px;
+      width: 40px;
+      transition: all 0.5s ease-in-out; }
+  #menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #menu-wrap .menu .scaler {
+      background: #005a81b9;
+      width: 300vw;
+      height: 300vw;
+      display: flex;
+      flex: none;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      transform: scale(0);
+      transition: all 0.4s ease; }
+      #menu-wrap .menu .scaler .list-container {
+        text-align: center;
+        max-width: 90vw;
+        max-height: 100vh;
+        opacity: 0;
+        transition: opacity 0.4s ease; }
+        #menu-wrap .menu .scaler .list-container .list-item {
+          list-style: none;
+          color: #fff;
+          font-size: 2rem;
+          padding: 1rem; }
+          #menu-wrap .menu .scaler .list-container .list-item a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.4s ease; }
+            #menu-wrap .menu .scaler .list-container .list-item a:hover {
+              color: #3fc5ff; }
+  #menu-wrap .visible {
+    visibility: visible; }
+    #menu-wrap .visible .enlarge {
+      transform: scale(1);
+      transition-duration: 0.75s; }
+      #menu-wrap .visible .enlarge .fade {
+        opacity: 1;
+        transition: opacity 0.4s ease 0.4s; }
+
+.close .burger-container {
+  transform: rotate(180deg); }
+
+.close .line-1 {
+  transform: rotate(45deg) translate(9px, 8px); }
+
+.close .line-2 {
+  opacity: 0; }
+
+.close .line-3 {
+  transform: rotate(-45deg) translate(8px, -8px); }
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  line-height: 1.6;
+  overflow: hidden; }
+
+#main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw; }
+  #main .portrait {
+    width: 100%;
+    flex: 2;
+    background-image: linear-gradient(to bottom right, #3fc5ff, #8adcff15);
+    position: relative; }
+    #main .portrait::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("../img/me.jpg") no-repeat;
+      background-size: cover;
+      background-position: 0 -100px;
+      opacity: 0.4; }
+  #main .title {
+    width: 100%;
+    flex: 1;
+    background: #005a81;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    #main .title .titles {
+      animation: titles 1.5s ease-in-out; }
+    #main .title .social {
+      display: flex;
+      animation: social 1.5s ease-in-out; }
+    #main .title .social-item {
+      margin: 0.75rem 0.5rem;
+      font-size: 20px;
+      flex: 1; }
+      #main .title .social-item a {
+        color: #fff;
+        transition: all 0.2s ease-in-out; }
+        #main .title .social-item a:hover {
+          color: #3fc5ff; }
+
+#about-main {
+  background-image: linear-gradient(to bottom right, #3fc5ff, #8adcff15);
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  #about-main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../img/me.jpg") no-repeat center center/cover;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%; }
+  #about-main .about-container {
+    padding: 5rem;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    display: flex; }
+    #about-main .about-container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      opacity: 0.4;
+      z-index: 0; }
+    #about-main .about-container .about-content {
+      z-index: 0; }
+
+#portfolio-main {
+  background-image: linear-gradient(to bottom right, #3fc5ff, #8adcff15);
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  #portfolio-main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../img/me.jpg") no-repeat center center/cover;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%; }
+  #portfolio-main .portfolio-container {
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    display: flex; }
+    #portfolio-main .portfolio-container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      opacity: 0.4;
+      z-index: 0; }
+    #portfolio-main .portfolio-container .portfolio-content {
+      z-index: 0; }
+      #portfolio-main .portfolio-container .portfolio-content .web-dev-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; }
+        #portfolio-main .portfolio-container .portfolio-content .web-dev-flex .box {
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+          margin: 0.75rem;
+          flex: 1;
+          position: relative;
+          border-radius: 10px; }
+          #portfolio-main .portfolio-container .portfolio-content .web-dev-flex .box img {
+            width: 100%;
+            height: 100%;
+            border: 2px solid #3fc5ff;
+            transition: all 0.5s; }
+            #portfolio-main .portfolio-container .portfolio-content .web-dev-flex .box img:hover {
+              border: 2px solid #005a81;
+              opacity: 0.7;
+              cursor: pointer; }
+          #portfolio-main .portfolio-container .portfolio-content .web-dev-flex .box .caption {
+            padding: 0.25rem;
+            text-align: center;
+            border-radius: 10px;
+            margin: 10px 0 0 0; }
+
+#contact-main {
+  background-image: linear-gradient(to bottom right, #3fc5ff, #8adcff15);
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  #contact-main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../img/me.jpg") no-repeat center center/cover;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%; }
+  #contact-main .contact-container {
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    display: flex; }
+    #contact-main .contact-container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      opacity: 0.4;
+      z-index: 0; }
+    #contact-main .contact-container .contact-content {
+      z-index: 0;
+      width: 100%; }
+      #contact-main .contact-container .contact-content .container .form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        #contact-main .contact-container .contact-content .container .form #main-form {
+          width: 100%;
+          color: #005a81; }
+          #contact-main .contact-container .contact-content .container .form #main-form label,
+          #contact-main .contact-container .contact-content .container .form #main-form input,
+          #contact-main .contact-container .contact-content .container .form #main-form textarea,
+          #contact-main .contact-container .contact-content .container .form #main-form button {
+            display: block;
+            width: 60%;
+            padding: 0.75rem;
+            font-size: 1.25rem;
+            margin: auto; }
+          #contact-main .contact-container .contact-content .container .form #main-form input,
+          #contact-main .contact-container .contact-content .container .form #main-form textarea {
+            border: 1px solid #3fc5ff; }
+          #contact-main .contact-container .contact-content .container .form #main-form textarea {
+            margin-bottom: 10px; }
+
+@media screen and (max-width: 500px) {
+  #main .portrait {
+    flex: 1; }
+    #main .portrait::before {
+      background-position: -70px 0; }
+  #main .title {
+    flex: 1;
+    text-align: center;
+    padding: 1rem; }
+    #main .title .titles h1 {
+      line-height: 1;
+      margin-bottom: 0.75rem; }
+  #menu-wrap .burger-container {
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px; }
+    #menu-wrap .burger-container .line {
+      width: 25px;
+      height: 3px; }
+  .close .line-1 {
+    transform: rotate(45deg) translate(6px, 4.5px); }
+  .close .line-2 {
+    opacity: 0; }
+  .close .line-3 {
+    transform: rotate(-45deg) translate(9px, -8px); }
+  #about-main::before {
+    background-position: -520px, 0; }
+  #about-main .about-container {
+    overflow: scroll;
+    padding: 1rem; }
+    #about-main .about-container .about-content {
+      overflow: scroll; }
+      #about-main .about-container .about-content .container {
+        margin: 0 auto;
+        min-width: 100%;
+        padding: 0;
+        text-align: center; }
+      #about-main .about-container .about-content h1 {
+        line-height: 1;
+        margin-bottom: 0.75rem;
+        font-size: 3rem;
+        text-align: center; }
+  #portfolio-main::before {
+    background-position: -400px, 0; }
+  #portfolio-main .portfolio-container {
+    overflow: scroll; }
+    #portfolio-main .portfolio-container .portfolio-content {
+      overflow: scroll; }
+      #portfolio-main .portfolio-container .portfolio-content h1 {
+        line-height: 1;
+        margin-bottom: 0.75rem;
+        font-size: 3rem;
+        text-align: center; }
+      #portfolio-main .portfolio-container .portfolio-content .container {
+        min-width: 100%; }
+        #portfolio-main .portfolio-container .portfolio-content .container .web-dev-flex {
+          flex-direction: column; }
+          #portfolio-main .portfolio-container .portfolio-content .container .web-dev-flex .box .caption {
+            padding: 0.5rem; }
+            #portfolio-main .portfolio-container .portfolio-content .container .web-dev-flex .box .caption p {
+              font-size: 1rem; }
+  #contact-main::before {
+    background-position: -400px, 0; }
+  #contact-main .contact-container {
+    overflow: scroll; }
+    #contact-main .contact-container .contact-content {
+      overflow: scroll; }
+      #contact-main .contact-container .contact-content h1 {
+        line-height: 1;
+        margin-bottom: 0.75rem;
+        font-size: 2rem;
+        text-align: center; }
+      #contact-main .contact-container .contact-content .container {
+        min-width: 100%; }
+        #contact-main .contact-container .contact-content .container .form #main-form label {
+          font-size: 1.3rem;
+          padding: 0.5rem;
+          width: 100%; }
+        #contact-main .contact-container .contact-content .container .form #main-form input,
+        #contact-main .contact-container .contact-content .container .form #main-form textarea,
+        #contact-main .contact-container .contact-content .container .form #main-form button {
+          width: 100%; }
+        #contact-main .contact-container .contact-content .container .form #main-form input,
+        #contact-main .contact-container .contact-content .container .form #main-form textarea {
+          font-size: 1rem; } }
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  #main .portrait::before {
+    background-position: -200px 0; }
+  #portfolio-main::before {
+    background-position: -400px, 0; }
+  #portfolio-main .portfolio-container {
+    overflow: scroll; }
+    #portfolio-main .portfolio-container .portfolio-content {
+      overflow: scroll; }
+      #portfolio-main .portfolio-container .portfolio-content h1 {
+        line-height: 1;
+        margin-bottom: 0.75rem;
+        font-size: 3rem;
+        text-align: center; }
+      #portfolio-main .portfolio-container .portfolio-content .container {
+        min-width: 70%; }
+        #portfolio-main .portfolio-container .portfolio-content .container .web-dev-flex {
+          flex-direction: column; }
+          #portfolio-main .portfolio-container .portfolio-content .container .web-dev-flex .box .caption {
+            padding: 0.5rem; }
+            #portfolio-main .portfolio-container .portfolio-content .container .web-dev-flex .box .caption p {
+              font-size: 1rem; }
+  #contact-main::before {
+    background-position: -400px, 0; }
+  #contact-main .contact-container {
+    overflow: scroll; }
+    #contact-main .contact-container .contact-content {
+      overflow: scroll; }
+      #contact-main .contact-container .contact-content h1 {
+        line-height: 1;
+        margin-bottom: 0.75rem;
+        font-size: 2.5rem;
+        text-align: center; }
+      #contact-main .contact-container .contact-content .container {
+        min-width: 100%; }
+        #contact-main .contact-container .contact-content .container .form #main-form label {
+          font-size: 1.3rem;
+          padding: 0.5rem;
+          width: 100%; }
+        #contact-main .contact-container .contact-content .container .form #main-form input,
+        #contact-main .contact-container .contact-content .container .form #main-form textarea,
+        #contact-main .contact-container .contact-content .container .form #main-form button {
+          width: 100%; }
+        #contact-main .contact-container .contact-content .container .form #main-form input,
+        #contact-main .contact-container .contact-content .container .form #main-form textarea {
+          font-size: 1.5rem; } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  #main .portrait::before {
+    background-position: -250px 0; }
+  #portfolio-main::before {
+    background-position: -400px, 0; }
+  #portfolio-main .portfolio-container {
+    overflow: scroll; }
+    #portfolio-main .portfolio-container .portfolio-content {
+      overflow: scroll; }
+      #portfolio-main .portfolio-container .portfolio-content h1 {
+        line-height: 1;
+        margin-bottom: 0.75rem;
+        font-size: 3rem;
+        text-align: center; }
+      #portfolio-main .portfolio-container .portfolio-content .container {
+        min-width: 70%; }
+        #portfolio-main .portfolio-container .portfolio-content .container .web-dev-flex {
+          flex-direction: column; }
+          #portfolio-main .portfolio-container .portfolio-content .container .web-dev-flex .box .caption {
+            padding: 0.5rem; }
+            #portfolio-main .portfolio-container .portfolio-content .container .web-dev-flex .box .caption p {
+              font-size: 1rem; }
+  #contact-main::before {
+    background-position: -400px, 0; }
+  #contact-main .contact-container {
+    overflow: scroll; }
+    #contact-main .contact-container .contact-content {
+      overflow: scroll; }
+      #contact-main .contact-container .contact-content h1 {
+        line-height: 1;
+        margin-bottom: 0.75rem;
+        font-size: 3rem;
+        text-align: center; }
+      #contact-main .contact-container .contact-content .container {
+        min-width: 100%; }
+        #contact-main .contact-container .contact-content .container .form #main-form button {
+          font-size: 1.5rem; }
+        #contact-main .contact-container .contact-content .container .form #main-form label {
+          font-size: 2rem;
+          padding: 0.5rem;
+          width: 100%; }
+        #contact-main .contact-container .contact-content .container .form #main-form input,
+        #contact-main .contact-container .contact-content .container .form #main-form textarea,
+        #contact-main .contact-container .contact-content .container .form #main-form button {
+          width: 100%; }
+        #contact-main .contact-container .contact-content .container .form #main-form input,
+        #contact-main .contact-container .contact-content .container .form #main-form textarea {
+          font-size: 2rem; } }
+
+@media screen and (max-width: 375px) and (min-height: 823px) {
+  #main .portrait::before {
+    background-position: -200px 0; } }
+
+@media screen and (max-width: 823px) and (orientation: landscape) {
+  #main .portrait {
+    flex: 1; }
+    #main .portrait::before {
+      background-position: 0 -50px; }
+  #main .title .titles h1 {
+    font-size: 2rem; }
+  #main .title .titles p {
+    font-size: 1rem; }
+  #main .title .social .social-item {
+    font-size: 1rem; }
+  #menu-wrap .burger-container {
+    top: 30px; }
+  #about-main .about-container {
+    overflow: scroll;
+    padding: 1.25rem; }
+    #about-main .about-container .about-content {
+      overflow: scroll; }
+      #about-main .about-container .about-content .container {
+        margin: 0 auto;
+        min-width: 100%;
+        padding: 0;
+        text-align: center; }
+      #about-main .about-container .about-content h1 {
+        line-height: 1;
+        margin-bottom: 0.75rem;
+        font-size: 3rem;
+        text-align: center; }
+  #portfolio-main::before {
+    background-position: 0px, 0; }
+  #portfolio-main .portfolio-container {
+    overflow: scroll; }
+    #portfolio-main .portfolio-container .portfolio-content {
+      overflow: scroll; }
+      #portfolio-main .portfolio-container .portfolio-content h1 {
+        line-height: 1;
+        margin-bottom: 0.75rem;
+        font-size: 3rem;
+        text-align: center; }
+      #portfolio-main .portfolio-container .portfolio-content .container {
+        min-width: 70%; }
+        #portfolio-main .portfolio-container .portfolio-content .container .web-dev-flex {
+          flex-direction: column; }
+          #portfolio-main .portfolio-container .portfolio-content .container .web-dev-flex .box .caption {
+            padding: 0.5rem; }
+            #portfolio-main .portfolio-container .portfolio-content .container .web-dev-flex .box .caption p {
+              font-size: 1rem; }
+  #contact-main::before {
+    background-position: 0, 0; }
+  #contact-main .contact-container {
+    overflow: scroll; }
+    #contact-main .contact-container .contact-content {
+      overflow: scroll; }
+      #contact-main .contact-container .contact-content h1 {
+        line-height: 1;
+        margin-bottom: 0.75rem;
+        font-size: 2rem;
+        text-align: center; }
+      #contact-main .contact-container .contact-content .container {
+        min-width: 100%; }
+        #contact-main .contact-container .contact-content .container .form #main-form button {
+          font-size: 1rem; }
+        #contact-main .contact-container .contact-content .container .form #main-form label {
+          font-size: 1.3rem;
+          padding: 0.5rem;
+          width: 100%; }
+        #contact-main .contact-container .contact-content .container .form #main-form input,
+        #contact-main .contact-container .contact-content .container .form #main-form textarea,
+        #contact-main .contact-container .contact-content .container .form #main-form button {
+          width: 100%; }
+        #contact-main .contact-container .contact-content .container .form #main-form input,
+        #contact-main .contact-container .contact-content .container .form #main-form textarea {
+          font-size: 1.25rem; } }
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  #main .portrait::before {
+    background-position: 0 0; }
+  #menu-wrap .burger-container {
+    top: 10px; }
+  #portfolio-main::before {
+    background-position: 0px, 0; }
+  #portfolio-main .portfolio-container {
+    overflow: scroll; }
+    #portfolio-main .portfolio-container .portfolio-content {
+      overflow: scroll; }
+      #portfolio-main .portfolio-container .portfolio-content h1 {
+        line-height: 1;
+        margin-bottom: 0.75rem;
+        font-size: 3rem;
+        text-align: center; }
+      #portfolio-main .portfolio-container .portfolio-content .container {
+        min-width: 70%; }
+        #portfolio-main .portfolio-container .portfolio-content .container .web-dev-flex {
+          flex-direction: column; }
+          #portfolio-main .portfolio-container .portfolio-content .container .web-dev-flex .box .caption {
+            padding: 0.5rem; }
+            #portfolio-main .portfolio-container .portfolio-content .container .web-dev-flex .box .caption p {
+              font-size: 1rem; }
+  #contact-main::before {
+    background-position: 0, 0; }
+  #contact-main .contact-container {
+    overflow: scroll; }
+    #contact-main .contact-container .contact-content {
+      overflow: scroll; }
+      #contact-main .contact-container .contact-content h1 {
+        line-height: 1;
+        margin-bottom: 0.75rem;
+        font-size: 2rem;
+        text-align: center; }
+      #contact-main .contact-container .contact-content .container {
+        min-width: 100%; }
+        #contact-main .contact-container .contact-content .container .form #main-form button {
+          font-size: 1rem; }
+        #contact-main .contact-container .contact-content .container .form #main-form label {
+          font-size: 1.3rem;
+          padding: 0.5rem;
+          width: 100%; }
+        #contact-main .contact-container .contact-content .container .form #main-form input,
+        #contact-main .contact-container .contact-content .container .form #main-form textarea,
+        #contact-main .contact-container .contact-content .container .form #main-form button {
+          width: 100%; }
+        #contact-main .contact-container .contact-content .container .form #main-form input,
+        #contact-main .contact-container .contact-content .container .form #main-form textarea {
+          font-size: 1.25rem; } }
+
+@media screen and (min-width: 737px) and (max-width: 823px) and (orientation: landscape) {
+  #main .portrait {
+    flex: 1; }
+    #main .portrait::before {
+      background-position: 0 -100px; }
+  #main .title .titles h1 {
+    font-size: 2rem; }
+  #main .title .titles p {
+    font-size: 1rem; }
+  #main .title .social .social-item {
+    font-size: 1rem; }
+  #menu-wrap .burger-container {
+    top: 30px; }
+  #about-main .about-container .about-content {
+    overflow: scroll; }
+    #about-main .about-container .about-content .container {
+      margin: 0 auto;
+      min-width: 100%;
+      padding: 0;
+      text-align: center; }
+    #about-main .about-container .about-content h1 {
+      line-height: 1;
+      margin-bottom: 0.75rem;
+      font-size: 3rem;
+      text-align: center; } }
