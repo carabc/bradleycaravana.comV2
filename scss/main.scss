@@ -147,6 +147,7 @@ body {
     font-weight: bold;
     position: relative;
     display: flex;
+    justify-content: center;
 
     &::before {
       content: "";
@@ -163,39 +164,44 @@ body {
     .portfolio-content {
       z-index: 0;
 
-      .web-dev-flex {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+      .container1 {
+        margin: auto;
+        width: 80%;
 
-        .box {
+        .web-dev-flex {
           display: flex;
-          flex-direction: column;
-          overflow: hidden;
-          margin: 0.75rem;
-          flex: 1;
-          position: relative;
-          border-radius: 10px;
+          flex-direction: row;
+          flex-wrap: wrap;
 
-          img {
-            width: 100%;
-            height: 100%;
-            border: 2px solid $primary-color;
-            transition: all 0.5s;
+          .box {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            margin: 0.75rem;
+            flex: 1;
+            position: relative;
             border-radius: 10px;
 
-            &:hover {
-              border: 2px solid $secondary-color;
-              opacity: 0.7;
-              cursor: pointer;
+            img {
+              width: 100%;
+              height: 100%;
+              border: 2px solid $primary-color;
+              transition: all 0.5s;
+              border-radius: 10px;
+
+              &:hover {
+                border: 2px solid $secondary-color;
+                opacity: 0.7;
+                cursor: pointer;
+              }
             }
-          }
 
-          .caption {
-            padding: 0.25rem;
-            text-align: center;
-            border-radius: 10px;
-            margin: 10px 0 0 0;
+            .caption {
+              padding: 0.25rem;
+              text-align: center;
+              border-radius: 10px;
+              margin: 10px 0 0 0;
+            }
           }
         }
       }
@@ -387,7 +393,7 @@ body {
           text-align: center;
         }
 
-        .container {
+        .container1 {
           min-width: 100%;
           .web-dev-flex {
             flex-direction: column;
@@ -474,7 +480,7 @@ body {
           text-align: center;
         }
 
-        .container {
+        .container1 {
           min-width: 70%;
           .web-dev-flex {
             flex-direction: column;
@@ -565,7 +571,7 @@ body {
           text-align: center;
         }
 
-        .container {
+        .container1 {
           min-width: 70%;
           .web-dev-flex {
             flex-direction: column;
@@ -724,7 +730,7 @@ body {
           text-align: center;
         }
 
-        .container {
+        .container1 {
           min-width: 70%;
           .web-dev-flex {
             flex-direction: column;
