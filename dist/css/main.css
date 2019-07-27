@@ -389,7 +389,8 @@ body {
           #contact-main .contact-container .contact-content .container .form #main-form label,
           #contact-main .contact-container .contact-content .container .form #main-form input,
           #contact-main .contact-container .contact-content .container .form #main-form textarea,
-          #contact-main .contact-container .contact-content .container .form #main-form button {
+          #contact-main .contact-container .contact-content .container .form #main-form button,
+          #contact-main .contact-container .contact-content .container .form #main-form .spam-filter {
             display: block;
             width: 60%;
             padding: 0.75rem;
