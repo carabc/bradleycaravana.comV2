@@ -50,7 +50,12 @@
           <h1 class="l-heading highlight">Drop Me a Line</h1>
           <div class="container">
             <div class="form">
-              <form action="" id="main-form">
+              <form
+                id="main-form"
+                method="POST"
+                data-netlify="true"
+                data-netlify-recaptcha="true"
+              >
                 <label for="">First Name</label>
                 <input type="text" name="name" id="firstName" />
                 <label for="">Last Name</label>
@@ -60,6 +65,9 @@
                 <label for="">Message</label>
                 <textarea name="message" id="message" required></textarea>
                 <button type="submit" class="btn">Send</button>
+                <div class="my-2">
+                  <div data-netlify-recaptcha="true"></div>
+                </div>
               </form>
             </div>
           </div>
