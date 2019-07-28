@@ -1,10 +1,10 @@
 @keyframes titles {
   0% {
     opacity: 0;
-    transform: translateX(-1000px);
+    transform: translateX(-100px);
   }
 
-  85% {
+  80% {
     opacity: 1;
     transform: translateX(30px);
   }
@@ -18,7 +18,7 @@
 @keyframes social {
   0% {
     opacity: 0;
-    transform: translatey(200px);
+    transform: translatey(40px);
   }
 
   85% {

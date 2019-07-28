@@ -79,8 +79,8 @@
 @keyframes titles {
   0% {
     opacity: 0;
-    transform: translateX(-1000px); }
-  85% {
+    transform: translateX(-100px); }
+  80% {
     opacity: 1;
     transform: translateX(30px); }
   100% {
@@ -90,7 +90,7 @@
 @keyframes social {
   0% {
     opacity: 0;
-    transform: translatey(200px); }
+    transform: translatey(40px); }
   85% {
     opacity: 1;
     transform: translatey(-15px); }
