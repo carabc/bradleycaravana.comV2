@@ -20,6 +20,7 @@
     cursor: pointer;
     z-index: 10;
     transition: all 0.5s ease-in-out;
+    animation: pulse 1s infinite;
 
     .line {
       margin: 0.2rem 0;
