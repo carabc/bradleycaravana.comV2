@@ -347,7 +347,7 @@ body {
               text-transform: uppercase;
               letter-spacing: 5px;
               transform: translateX(-100%);
-              transition: all 0.5s ease-in-out; }
+              transition: all 0.3s ease-out; }
             #portfolio-main .portfolio-container .portfolio-content .container1 .web-dev-flex .box .overlay2 {
               position: absolute;
               top: 0;
@@ -365,7 +365,7 @@ body {
               text-transform: uppercase;
               letter-spacing: 5px;
               transform: translatey(-100%);
-              transition: all 0.5s ease-in-out; }
+              transition: all 0.3s ease-out; }
             #portfolio-main .portfolio-container .portfolio-content .container1 .web-dev-flex .box .overlay3 {
               position: absolute;
               top: 0;
@@ -383,7 +383,7 @@ body {
               text-transform: uppercase;
               letter-spacing: 5px;
               transform: translatex(100%);
-              transition: all 0.5s ease-in-out; }
+              transition: all 0.3s ease-out; }
             #portfolio-main .portfolio-container .portfolio-content .container1 .web-dev-flex .box img {
               width: 100%;
               height: 100%;
