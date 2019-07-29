@@ -171,6 +171,8 @@
             color: #fff;
             text-decoration: none;
             font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5rem;
             transition: color 0.4s ease; }
             #menu-wrap .menu .scaler .list-container .list-item a:hover {
               color: #3fc5ff; }
