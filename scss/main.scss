@@ -373,7 +373,8 @@ body {
       flex: 1;
 
       &::before {
-        background-position: -70px 0;
+        // background-position: -70px 0;
+        background-position: right;
       }
     }
 
@@ -423,7 +424,8 @@ body {
     // padding: 0;
 
     &::before {
-      background-position: -520px, 0;
+      // background-position: -520px, 0;
+      background-position: right;
     }
 
     .about-container {
@@ -451,7 +453,8 @@ body {
 
   #portfolio-main {
     &::before {
-      background-position: -400px, 0;
+      // background-position: -400px, 0;
+      background-position: right;
     }
 
     .portfolio-container {
@@ -494,7 +497,8 @@ body {
 
   #contact-main {
     &::before {
-      background-position: -400px, 0;
+      // background-position: -400px, 0;
+      background-position: right;
     }
 
     .contact-container {
@@ -540,12 +544,14 @@ body {
 //Tablets and Small Laptops
 @media screen and (min-width: 501px) and (max-width: 768px) {
   #main .portrait::before {
-    background-position: -200px 0;
+    // background-position: -200px 0;
+    background-position: right;
   }
 
   #portfolio-main {
     &::before {
-      background-position: -400px, 0;
+      // background-position: -400px, 0;
+      background-position: right;
     }
 
     .portfolio-container {
@@ -581,7 +587,8 @@ body {
 
   #contact-main {
     &::before {
-      background-position: -400px, 0;
+      // background-position: -400px, 0;
+      background-position: right;
     }
 
     .contact-container {
@@ -629,14 +636,16 @@ body {
   #main {
     .portrait {
       &::before {
-        background-position: -250px 0;
+        // background-position: -250px 0;
+        background-position: right;
       }
     }
   }
 
   #portfolio-main {
     &::before {
-      background-position: -400px, 0;
+      // background-position: -400px, 0;
+      background-position: right;
     }
 
     .portfolio-container {
@@ -672,7 +681,8 @@ body {
 
   #contact-main {
     &::before {
-      background-position: -400px, 0;
+      // background-position: -400px, 0;
+      background-position: right;
     }
 
     .contact-container {
@@ -727,7 +737,8 @@ body {
   #main {
     .portrait {
       &::before {
-        background-position: -200px 0;
+        // background-position: -200px 0;
+        background-position: right;
       }
     }
   }
@@ -739,7 +750,8 @@ body {
       flex: 1;
 
       &::before {
-        background-position: 0 -50px;
+        // background-position: 0 -50px;
+        background-position: right;
       }
     }
 
@@ -795,7 +807,8 @@ body {
 
   #portfolio-main {
     &::before {
-      background-position: 0px, 0;
+      // background-position: 0px, 0;
+      background-position: right;
     }
 
     .portfolio-container {
@@ -830,7 +843,8 @@ body {
   }
   #contact-main {
     &::before {
-      background-position: 0, 0;
+      // background-position: 0, 0;
+      background-position: right;
     }
 
     .contact-container {
@@ -882,7 +896,8 @@ body {
   #main {
     .portrait {
       &::before {
-        background-position: 0 0;
+        // background-position: 0 0;
+        background-position: right;
       }
     }
   }
@@ -895,7 +910,8 @@ body {
 
   #portfolio-main {
     &::before {
-      background-position: 0px, 0;
+      // background-position: 0px, 0;
+      background-position: right;
     }
 
     .portfolio-container {
@@ -931,7 +947,8 @@ body {
 
   #contact-main {
     &::before {
-      background-position: 0, 0;
+      // background-position: 0, 0;
+      background-position: right;
     }
 
     .contact-container {
@@ -987,6 +1004,7 @@ body {
 
       &::before {
         background-position: 0 -100px;
+        // background-position: right;
       }
     }
 

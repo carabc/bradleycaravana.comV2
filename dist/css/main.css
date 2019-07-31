@@ -476,7 +476,7 @@ body {
   #main .portrait {
     flex: 1; }
     #main .portrait::before {
-      background-position: -70px 0; }
+      background-position: right; }
   #main .title {
     flex: 1;
     text-align: center;
@@ -499,7 +499,7 @@ body {
   .close .line-3 {
     transform: rotate(-45deg) translate(9px, -8px); }
   #about-main::before {
-    background-position: -520px, 0; }
+    background-position: right; }
   #about-main .about-container {
     overflow: scroll;
     padding: 1rem; }
@@ -516,7 +516,7 @@ body {
         font-size: 3rem;
         text-align: center; }
   #portfolio-main::before {
-    background-position: -400px, 0; }
+    background-position: right; }
   #portfolio-main .portfolio-container {
     overflow: scroll; }
     #portfolio-main .portfolio-container .portfolio-content {
@@ -539,7 +539,7 @@ body {
           #portfolio-main .portfolio-container .portfolio-content .container1 .web-dev-flex .box a .overlay3 p {
             font-size: 0.75rem; }
   #contact-main::before {
-    background-position: -400px, 0; }
+    background-position: right; }
   #contact-main .contact-container {
     overflow: scroll; }
     #contact-main .contact-container .contact-content {
@@ -565,9 +565,9 @@ body {
 
 @media screen and (min-width: 501px) and (max-width: 768px) {
   #main .portrait::before {
-    background-position: -200px 0; }
+    background-position: right; }
   #portfolio-main::before {
-    background-position: -400px, 0; }
+    background-position: right; }
   #portfolio-main .portfolio-container {
     overflow: scroll; }
     #portfolio-main .portfolio-container .portfolio-content {
@@ -586,7 +586,7 @@ body {
             #portfolio-main .portfolio-container .portfolio-content .container1 .web-dev-flex .box .caption p {
               font-size: 1rem; }
   #contact-main::before {
-    background-position: -400px, 0; }
+    background-position: right; }
   #contact-main .contact-container {
     overflow: scroll; }
     #contact-main .contact-container .contact-content {
@@ -612,9 +612,9 @@ body {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   #main .portrait::before {
-    background-position: -250px 0; }
+    background-position: right; }
   #portfolio-main::before {
-    background-position: -400px, 0; }
+    background-position: right; }
   #portfolio-main .portfolio-container {
     overflow: scroll; }
     #portfolio-main .portfolio-container .portfolio-content {
@@ -633,7 +633,7 @@ body {
             #portfolio-main .portfolio-container .portfolio-content .container1 .web-dev-flex .box .caption p {
               font-size: 1rem; }
   #contact-main::before {
-    background-position: -400px, 0; }
+    background-position: right; }
   #contact-main .contact-container {
     overflow: scroll; }
     #contact-main .contact-container .contact-content {
@@ -661,13 +661,13 @@ body {
 
 @media screen and (max-width: 375px) and (min-height: 823px) {
   #main .portrait::before {
-    background-position: -200px 0; } }
+    background-position: right; } }
 
 @media screen and (max-width: 823px) and (orientation: landscape) {
   #main .portrait {
     flex: 1; }
     #main .portrait::before {
-      background-position: 0 -50px; }
+      background-position: right; }
   #main .title .titles h1 {
     font-size: 2rem; }
   #main .title .titles p {
@@ -692,7 +692,7 @@ body {
         font-size: 3rem;
         text-align: center; }
   #portfolio-main::before {
-    background-position: 0px, 0; }
+    background-position: right; }
   #portfolio-main .portfolio-container {
     overflow: scroll; }
     #portfolio-main .portfolio-container .portfolio-content {
@@ -711,7 +711,7 @@ body {
             #portfolio-main .portfolio-container .portfolio-content .container1 .web-dev-flex .box .caption p {
               font-size: 1rem; }
   #contact-main::before {
-    background-position: 0, 0; }
+    background-position: right; }
   #contact-main .contact-container {
     overflow: scroll; }
     #contact-main .contact-container .contact-content {
@@ -739,11 +739,11 @@ body {
 
 @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
   #main .portrait::before {
-    background-position: 0 0; }
+    background-position: right; }
   #menu-wrap .burger-container {
     top: 10px; }
   #portfolio-main::before {
-    background-position: 0px, 0; }
+    background-position: right; }
   #portfolio-main .portfolio-container {
     overflow: scroll; }
     #portfolio-main .portfolio-container .portfolio-content {
@@ -762,7 +762,7 @@ body {
             #portfolio-main .portfolio-container .portfolio-content .container .web-dev-flex .box .caption p {
               font-size: 1rem; }
   #contact-main::before {
-    background-position: 0, 0; }
+    background-position: right; }
   #contact-main .contact-container {
     overflow: scroll; }
     #contact-main .contact-container .contact-content {
