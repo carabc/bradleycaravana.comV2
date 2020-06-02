@@ -285,6 +285,8 @@ body {
       z-index: 0; }
     #about-main .about-container .about-content {
       z-index: 0; }
+      #about-main .about-container .about-content p {
+        text-align: justify; }
 
 #portfolio-main {
   background-image: linear-gradient(to bottom right, #3fc5ff, #8adcff15);
